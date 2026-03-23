@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36616.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "WebDesigner_Angular_Core.Server\WebDesigner_Angular_Core.Server.csproj", "{1554C83C-50C6-4FF5-BA7F-20C12BF8248B}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Client", "WebDesigner_Angular_Core.Client\WebDesigner_Angular_Core.Client.esproj", "{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		ActiveReports.config = ActiveReports.config
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1554C83C-50C6-4FF5-BA7F-20C12BF8248B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1554C83C-50C6-4FF5-BA7F-20C12BF8248B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1554C83C-50C6-4FF5-BA7F-20C12BF8248B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1554C83C-50C6-4FF5-BA7F-20C12BF8248B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01CA5878-9809-40AD-BEFE-C418A682943A}
+	EndGlobalSection
+EndGlobal
