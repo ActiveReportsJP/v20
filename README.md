@@ -3,14 +3,7 @@ ActiveReports for .NETは、Visual Studio上で帳票アプリケーションを
 
 <img width="1080" height="900" alt="hero-image-activereports" src="https://github.com/user-attachments/assets/bb985cb1-b761-40cc-b96a-f6834250a9b9" />
 
-### ドキュメント
-[サンプル - ActiveReports（アクティブレポート）ヘルプ | Developer Solutions〈開発支援ツール〉 - メシウス株式会社](https://demo.mescius.jp/activereports/docs/v20/samples-and-walkthroughs/samples)
-
-### デモ
-[デモアプリケーション - ActiveReports for .NET（アクティブレポート） | Developer Solutions〈開発支援ツール〉 - メシウス株式会社](https://developer.mescius.jp/activereports/demo)
-
-### ナレッジベース
-[ActiveReports for .NET 20.0J – MESCIUS ナレッジベース](https://support.mescius.jp/hc/ja/categories/15287210418063)
-
-### 製品情報
-[.NET帳票コンポーネント - ActiveReports for .NET（アクティブレポート） | Developer Solutions〈開発支援ツール〉 - メシウス株式会社](https://developer.mescius.jp/activereports)
+- [製品情報](https://developer.mescius.jp/activereports)
+- [デモアプリケーション](https://developer.mescius.jp/activereports/demo)
+- [ヘルプ](https://demo.mescius.jp/activereports/docs/)
+- [ナレッジベース](https://support.mescius.jp/hc/ja)
