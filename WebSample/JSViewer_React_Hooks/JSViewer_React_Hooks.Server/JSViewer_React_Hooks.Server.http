@@ -1,0 +1,5 @@
+@JSViewer_React_Hooks.Server_HostAddress = http://localhost:5048
+
+GET {{JSViewer_React_Hooks.Server_HostAddress}}/reports/
+Accept: application/json
+###

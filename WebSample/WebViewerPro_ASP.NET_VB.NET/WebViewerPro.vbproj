@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B76F0B07-DAAA-438D-8B96-AE57E3B44A6B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GrapeCity.ActiveReports.Samples.Web</RootNamespace>
+    <AssemblyName>WebViewerPro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <NoWarn>MSB3277</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=3.2.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.3.2.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml.Framework, Version=3.2.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.Framework.3.2.0\lib\net46\DocumentFormat.OpenXml.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="DS.Documents.DX.Windows, Version=8.1.4.0, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>packages\DS.Documents.DX.Windows.8.1.4\lib\net462\DS.Documents.DX.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="DS.Documents.Imaging, Version=8.1.4.0, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>packages\DS.Documents.Imaging.8.1.4\lib\net462\DS.Documents.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="DS.Documents.Imaging.Windows, Version=8.1.4.0, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>packages\DS.Documents.Imaging.Windows.8.1.4\lib\net462\DS.Documents.Imaging.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="DS.Documents.Pdf, Version=8.1.4.0, Culture=neutral, PublicKeyToken=d55d733d2bfd5065, processorArchitecture=MSIL">
+      <HintPath>packages\DS.Documents.Pdf.8.1.4\lib\net462\DS.Documents.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Chart, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Chart.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Data.DataEngine, Version=5.3.1.0, Culture=neutral, PublicKeyToken=0b5e1563d2869208, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Data.DataEngine.5.3.1\lib\net472\MESCIUS.ActiveReports.Core.Data.DataEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Data.ExpressionInfo, Version=5.3.1.0, Culture=neutral, PublicKeyToken=0b5e1563d2869208, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Data.ExpressionInfo.5.3.1\lib\net472\MESCIUS.ActiveReports.Core.Data.ExpressionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Data.VBFunctionLib, Version=5.3.1.0, Culture=neutral, PublicKeyToken=0b5e1563d2869208, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Data.VBFunctionLib.5.3.1\lib\net472\MESCIUS.ActiveReports.Core.Data.VBFunctionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.DataProviders, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.DataProviders.4.1.0\lib\net472\MESCIUS.ActiveReports.Core.DataProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Document, Version=6.0.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Document.6.0.2\lib\net472\MESCIUS.ActiveReports.Core.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Document.Drawing.Gc, Version=6.0.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Document.Drawing.Gc.6.0.2\lib\net472\MESCIUS.ActiveReports.Core.Document.Drawing.Gc.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Document.Drawing.Gdi, Version=6.0.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Document.Drawing.Gdi.6.0.2\lib\net472\MESCIUS.ActiveReports.Core.Document.Drawing.Gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Drawing.Gc, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Drawing.Gc.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Drawing.Gc.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Drawing.Gdi, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Drawing.Gdi.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Drawing.Gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Excel.Page, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Excel.Page.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Excel.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Html.Page, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Html.Page.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Html.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Image.Page, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Image.Page.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Image.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Pdf.Page, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Pdf.Page.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Pdf.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Pdf.Section, Version=6.0.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Pdf.Section.6.0.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Pdf.Section.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Svg.Page, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Svg.Page.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Svg.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Text.Page, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Text.Page.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Text.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Tiff.Section, Version=6.0.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Tiff.Section.6.0.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Tiff.Section.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Export.Word.Page, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Export.Word.Page.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Export.Word.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Rdl, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Rdl.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Rdl.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Rendering, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Rendering.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.ReportItems.Chart, Version=1.2.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.ReportItems.Chart.1.2.2\lib\net472\MESCIUS.ActiveReports.Core.ReportItems.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Core.Scripting, Version=4.3.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Core.Scripting.4.3.2\lib\net472\MESCIUS.ActiveReports.Core.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Export.Excel, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Export.Excel.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Export.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Export.Html, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Export.Html.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Export.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Export.Image, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Export.Image.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Export.Image.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Export.Image.Win, Version=20.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Export.Image.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Export.Image.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Export.Pdf, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Export.Pdf.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Export.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Export.Pdf.Win, Version=20.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Export.Pdf.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Export.Pdf.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Export.Word, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Export.Word.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Export.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Export.Xml, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Export.Xml.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Export.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.SpreadBuilder, Version=3.0.2.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.SpreadBuilder.3.0.2\lib\net472\MESCIUS.ActiveReports.SpreadBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Web, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Web.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Web.Viewer, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.Web.Viewer.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Web.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="MESCIUS.ActiveReports.Win, Version=20.0.1.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>packages\MESCIUS.ActiveReports.ja.20.0.1\lib\net472\MESCIUS.ActiveReports.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.8.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\default.css" />
+    <Content Include="CSS\tab.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="PageWebControl.aspx" />
+    <Content Include="ParameterReport.aspx" />
+    <Content Include="RdlxWebControl.aspx" />
+    <Content Include="Scripts\default.js" />
+    <Content Include="Scripts\tab.js" />
+    <Content Include="SectionWebControl.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebControl.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PageWebControl.aspx.designer.vb">
+      <DependentUpon>PageWebControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageWebControl.aspx.vb">
+      <DependentUpon>PageWebControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParameterReport.aspx.designer.vb">
+      <DependentUpon>ParameterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParameterReport.aspx.vb">
+      <DependentUpon>ParameterReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="RdlxWebControl.aspx.designer.vb">
+      <DependentUpon>RdlxWebControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RdlxWebControl.aspx.vb">
+      <DependentUpon>RdlxWebControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SectionWebControl.aspx.designer.vb">
+      <DependentUpon>SectionWebControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SectionWebControl.aspx.vb">
+      <DependentUpon>SectionWebControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControl.aspx.designer.vb">
+      <DependentUpon>WebControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControl.aspx.vb">
+      <DependentUpon>WebControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\WebControl.aspx.resx" />
+    <Content Include="App_LocalResources\CustomExportHtml.aspx.resx" />
+    <Content Include="App_LocalResources\CustomExportPdf.aspx.resx" />
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActiveReports.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="ar-webviewer-locale.json" />
+    <Content Include="PageReports\Invoice_Grouped.rdlx" />
+    <Content Include="PageReports\PurchaseReport.rdlx" />
+    <Content Include="RdlxReports\SalesReceipt.rdlx" />
+    <Content Include="RpxReports\Invoice.rpx" />
+    <Content Include="RpxReports\InvoiceFiltered.rpx" />
+    <Content Include="RpxReports\NwindLabels.rpx" />
+    <Content Include="RpxReports\NwindLabelsFiltered.rpx" />
+    <Content Include="RpxReports\Params.rpx" />
+    <Content Include="PageReports\Invoice_Grouped.csv" />
+    <Content Include="PageReports\PurchaseReport.csv" />
+    <Content Include="RdlxReports\SalesReceipt.csv" />
+    <Content Include="RdlxReports\Reels.rdlx-theme" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>4707</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

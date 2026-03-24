@@ -1,0 +1,30 @@
+{
+  "name": "js-viewer-react",
+  "version": "1.0.0",
+  "description": "This sample demonstrates the use of MESCIUS ActiveReports JS Viewer with an ReactJS app and ASP.NET Core backend.",
+  "author": "MESCIUS",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "@mescius/activereportsnet-viewer-ja": "20.0.1",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

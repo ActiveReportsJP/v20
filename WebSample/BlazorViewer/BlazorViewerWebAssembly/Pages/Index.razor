@@ -1,0 +1,39 @@
+﻿@page "/"
+
+<div class="main">
+    <ReportList ReportsList="@_reportsList" CurrentReport="@_currentReport" OnClickCallback="OnClick"></ReportList>
+    <div id="viewerContainer">
+        <ReportViewer @ref="_viewer" ReportService="@_reportService" ViewerInitialized="ViewerInitialized" />
+    </div>
+</div>
+
+@code {
+    private ReportViewer _viewer;
+    private List<BlazorViewerWebAssembly.Data.ReportDescriptor> _reportsList;
+    private BlazorViewerWebAssembly.Data.ReportDescriptor _currentReport = null;
+
+    private ReportServiceSettings _reportService = new ReportServiceSettings()
+        {
+            Url = "http://localhost:58865/",
+        };
+
+    protected override async Task OnInitializedAsync()
+    {
+        var http = new HttpClient { BaseAddress = new Uri(_reportService.Url) };
+        _reportsList = await http.GetFromJsonAsync<List<BlazorViewerWebAssembly.Data.ReportDescriptor>>("/reports/");
+        foreach (var report in _reportsList)
+            report.UseSnapshot = report.HasSnapshot;
+        _currentReport = _reportsList.FirstOrDefault() ?? new BlazorViewerWebAssembly.Data.ReportDescriptor("AcmeStore.rdlx", true, "AcmeStore.rdlx-snap") { UseSnapshot = true };
+    }
+
+    public async void ViewerInitialized()
+    {
+        await _viewer.OpenReport(_currentReport?.GetReportName());
+    }
+
+    private async void OnClick(BlazorViewerWebAssembly.Data.ReportDescriptor report)
+    {
+        _currentReport = report;
+        await _viewer.OpenReport(_currentReport?.GetReportName());
+    }
+}
