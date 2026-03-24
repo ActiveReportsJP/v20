@@ -1,8 +1,0 @@
-﻿{
-  "profiles": {
-    "PrintAgent": {
-      "commandName": "Project",
-      "commandLineArgs": "--console"
-    }
-  }
-}
