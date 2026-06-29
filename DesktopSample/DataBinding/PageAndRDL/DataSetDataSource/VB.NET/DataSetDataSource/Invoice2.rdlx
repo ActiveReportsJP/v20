@@ -752,11 +752,6 @@
 					</Page>
 				</Pages>
 				<DataSetName>DataSet1</DataSetName>
-				<Grouping Name="FixedPage1_Group">
-					<GroupExpressions>
-						<GroupExpression>=Fields!EstimateID.Value</GroupExpression>
-					</GroupExpressions>
-				</Grouping>
 			</FixedPage>
 		</ReportItems>
 	</Body>

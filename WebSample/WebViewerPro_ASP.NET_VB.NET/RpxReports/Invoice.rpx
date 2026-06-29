@@ -78,7 +78,7 @@
 int counter = 0;
 public void GFOrderID_BeforePrint()
 {
-((TextBox)rpt.Sections["GFOrderID"].Controls["txtTotal"]).Value = (System.Double)((TextBox)rpt.Sections["GFOrderID"].Controls["txtFreight"]).Value + (System.Double)((TextBox)rpt.Sections["GFOrderID"].Controls["txtSubTotal"]).Value;
+((TextBox)rpt.Sections["GFOrderID"].Controls["txtTotal"]).Value = (System.Decimal)((TextBox)rpt.Sections["GFOrderID"].Controls["txtFreight"]).Value + (System.Decimal)((TextBox)rpt.Sections["GFOrderID"].Controls["txtSubTotal"]).Value;
 }public void ActiveReport_DataInitialize()
 {
 table.Columns.Add("ShipName", typeof(String));

@@ -1,9 +1,9 @@
 [
   {
     "TransactionNumber": 4,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/15/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 73.77
   },
@@ -25,15 +25,15 @@
   },
   {
     "TransactionNumber": 1,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/12/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 11.34
   },
   {
     "TransactionNumber": 4,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/12/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -60,12 +60,12 @@
     "Category": "Shopping",
     "Date": "11/10/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 78.55
   },
   {
     "TransactionNumber": 4,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/10/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Pizza",
@@ -83,7 +83,7 @@
     "TransactionNumber": 57,
     "Category": "Home",
     "Date": "11/10/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 70.56
   },
@@ -97,7 +97,7 @@
   },
   {
     "TransactionNumber": 57,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/10/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -105,7 +105,7 @@
   },
   {
     "TransactionNumber": 57,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/10/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -116,12 +116,12 @@
     "Category": "Shopping",
     "Date": "11/10/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 76.12
   },
   {
     "TransactionNumber": 59,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/10/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -145,7 +145,7 @@
   },
   {
     "TransactionNumber": 4,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/9/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Pizza",
@@ -161,9 +161,9 @@
   },
   {
     "TransactionNumber": 20,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/9/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 29.73
   },
@@ -177,17 +177,17 @@
   },
   {
     "TransactionNumber": 20,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/9/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 63.35
   },
   {
     "TransactionNumber": 20,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/9/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 97.13
   },
@@ -225,7 +225,7 @@
   },
   {
     "TransactionNumber": 45,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/9/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Pizza",
@@ -249,7 +249,7 @@
   },
   {
     "TransactionNumber": 45,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/9/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -257,7 +257,7 @@
   },
   {
     "TransactionNumber": 45,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/9/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Pizza",
@@ -267,7 +267,7 @@
     "TransactionNumber": 45,
     "Category": "Home",
     "Date": "11/9/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 51.46
   },
@@ -281,15 +281,15 @@
   },
   {
     "TransactionNumber": 4,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/8/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 60.33
   },
   {
     "TransactionNumber": 6,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/8/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -313,7 +313,7 @@
   },
   {
     "TransactionNumber": 6,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/7/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Pizza",
@@ -329,7 +329,7 @@
   },
   {
     "TransactionNumber": 3,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/6/2020",
     "Retailer": "HHRD",
     "LineItem": "Donation - Thank You!",
@@ -385,7 +385,7 @@
   },
   {
     "TransactionNumber": 68,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/6/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -393,7 +393,7 @@
   },
   {
     "TransactionNumber": 68,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/6/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -401,7 +401,7 @@
   },
   {
     "TransactionNumber": 68,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/6/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -425,9 +425,9 @@
   },
   {
     "TransactionNumber": 6,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/5/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 53.84
   },
@@ -441,9 +441,9 @@
   },
   {
     "TransactionNumber": 8,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/5/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 98.5
   },
@@ -481,7 +481,7 @@
   },
   {
     "TransactionNumber": 10,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/5/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -489,7 +489,7 @@
   },
   {
     "TransactionNumber": 10,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/5/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -505,9 +505,9 @@
   },
   {
     "TransactionNumber": 10,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/5/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 65.97
   },
@@ -521,9 +521,9 @@
   },
   {
     "TransactionNumber": 14,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/5/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 39.69
   },
@@ -537,7 +537,7 @@
   },
   {
     "TransactionNumber": 39,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/5/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -545,9 +545,9 @@
   },
   {
     "TransactionNumber": 39,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/5/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 21.79
   },
@@ -579,7 +579,7 @@
     "TransactionNumber": 60,
     "Category": "Home",
     "Date": "11/5/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 49.59
   },
@@ -601,7 +601,7 @@
   },
   {
     "TransactionNumber": 60,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/5/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -611,7 +611,7 @@
     "TransactionNumber": 60,
     "Category": "Home",
     "Date": "11/5/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 12.81
   },
@@ -619,13 +619,13 @@
     "TransactionNumber": 60,
     "Category": "Home",
     "Date": "11/5/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 20.99
   },
   {
     "TransactionNumber": 60,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/5/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -633,7 +633,7 @@
   },
   {
     "TransactionNumber": 62,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/5/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -652,12 +652,12 @@
     "Category": "Shopping",
     "Date": "11/5/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 74.46
   },
   {
     "TransactionNumber": 65,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/5/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -665,7 +665,7 @@
   },
   {
     "TransactionNumber": 65,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/5/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -673,7 +673,7 @@
   },
   {
     "TransactionNumber": 65,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/5/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -697,7 +697,7 @@
   },
   {
     "TransactionNumber": 6,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/4/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -713,17 +713,17 @@
   },
   {
     "TransactionNumber": 11,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/4/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 82.93
   },
   {
     "TransactionNumber": 11,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/4/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 23.27
   },
@@ -745,15 +745,15 @@
   },
   {
     "TransactionNumber": 11,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/4/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 26.69
   },
   {
     "TransactionNumber": 11,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/4/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -761,7 +761,7 @@
   },
   {
     "TransactionNumber": 11,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/4/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -777,7 +777,7 @@
   },
   {
     "TransactionNumber": 32,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/3/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Training",
@@ -785,7 +785,7 @@
   },
   {
     "TransactionNumber": 32,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/3/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -793,7 +793,7 @@
   },
   {
     "TransactionNumber": 32,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/3/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -801,7 +801,7 @@
   },
   {
     "TransactionNumber": 32,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/3/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -809,7 +809,7 @@
   },
   {
     "TransactionNumber": 32,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/3/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -825,7 +825,7 @@
   },
   {
     "TransactionNumber": 32,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/3/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -833,7 +833,7 @@
   },
   {
     "TransactionNumber": 36,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/3/2020",
     "Retailer": "Homeless Shelters of America",
     "LineItem": "Donation - Thank You!",
@@ -841,7 +841,7 @@
   },
   {
     "TransactionNumber": 36,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/3/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -865,7 +865,7 @@
   },
   {
     "TransactionNumber": 36,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/3/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -873,9 +873,9 @@
   },
   {
     "TransactionNumber": 36,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/3/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 76.13
   },
@@ -900,7 +900,7 @@
     "Category": "Shopping",
     "Date": "11/2/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 79.3
   },
   {
@@ -913,7 +913,7 @@
   },
   {
     "TransactionNumber": 28,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/2/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Training",
@@ -921,23 +921,23 @@
   },
   {
     "TransactionNumber": 28,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/2/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 85.19
   },
   {
     "TransactionNumber": 28,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "11/2/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 25.61
   },
   {
     "TransactionNumber": 28,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/2/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -953,7 +953,7 @@
   },
   {
     "TransactionNumber": 28,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/2/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -969,7 +969,7 @@
   },
   {
     "TransactionNumber": 28,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "11/2/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -977,7 +977,7 @@
   },
   {
     "TransactionNumber": 28,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/2/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1001,7 +1001,7 @@
   },
   {
     "TransactionNumber": 43,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "11/1/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1017,7 +1017,7 @@
   },
   {
     "TransactionNumber": 43,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "11/1/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -1025,7 +1025,7 @@
   },
   {
     "TransactionNumber": 51,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/31/2020",
     "Retailer": "HHRD",
     "LineItem": "Donation - Thank You!",
@@ -1033,7 +1033,7 @@
   },
   {
     "TransactionNumber": 22,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/30/2020",
     "Retailer": "City Water",
     "LineItem": "Water Bill",
@@ -1065,7 +1065,7 @@
   },
   {
     "TransactionNumber": 22,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/30/2020",
     "Retailer": "Amazon",
     "LineItem": "Amazon Shopping",
@@ -1105,7 +1105,7 @@
   },
   {
     "TransactionNumber": 54,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/30/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -1169,7 +1169,7 @@
   },
   {
     "TransactionNumber": 2,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/27/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1193,7 +1193,7 @@
   },
   {
     "TransactionNumber": 12,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/26/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1201,9 +1201,9 @@
   },
   {
     "TransactionNumber": 12,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/26/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 50.97
   },
@@ -1241,7 +1241,7 @@
   },
   {
     "TransactionNumber": 27,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/26/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Training",
@@ -1265,7 +1265,7 @@
   },
   {
     "TransactionNumber": 5,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/25/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -1273,15 +1273,15 @@
   },
   {
     "TransactionNumber": 21,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/25/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 36.72
   },
   {
     "TransactionNumber": 25,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/25/2020",
     "Retailer": "City Water",
     "LineItem": "Water Bill",
@@ -1289,7 +1289,7 @@
   },
   {
     "TransactionNumber": 25,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/25/2020",
     "Retailer": "Amazon",
     "LineItem": "Amazon Shopping",
@@ -1305,9 +1305,9 @@
   },
   {
     "TransactionNumber": 25,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/25/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 70.45
   },
@@ -1321,7 +1321,7 @@
   },
   {
     "TransactionNumber": 25,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/25/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1353,7 +1353,7 @@
   },
   {
     "TransactionNumber": 30,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/25/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1369,7 +1369,7 @@
   },
   {
     "TransactionNumber": 30,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/25/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Training",
@@ -1377,7 +1377,7 @@
   },
   {
     "TransactionNumber": 42,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/25/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -1395,7 +1395,7 @@
     "TransactionNumber": 42,
     "Category": "Home",
     "Date": "10/25/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 70.23
   },
@@ -1409,7 +1409,7 @@
   },
   {
     "TransactionNumber": 42,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/25/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Drinks",
@@ -1425,7 +1425,7 @@
   },
   {
     "TransactionNumber": 42,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/25/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Drinks",
@@ -1441,7 +1441,7 @@
   },
   {
     "TransactionNumber": 42,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/25/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1475,7 +1475,7 @@
     "TransactionNumber": 61,
     "Category": "Home",
     "Date": "10/25/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 96.67
   },
@@ -1489,7 +1489,7 @@
   },
   {
     "TransactionNumber": 70,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/24/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1505,10 +1505,10 @@
   },
   {
     "TransactionNumber": 15,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/24/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 65.6
   },
   {
@@ -1529,7 +1529,7 @@
   },
   {
     "TransactionNumber": 15,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/24/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1537,9 +1537,9 @@
   },
   {
     "TransactionNumber": 15,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/24/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 12.23
   },
@@ -1553,7 +1553,7 @@
   },
   {
     "TransactionNumber": 15,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/24/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -1577,7 +1577,7 @@
   },
   {
     "TransactionNumber": 49,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/24/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1593,7 +1593,7 @@
   },
   {
     "TransactionNumber": 53,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/24/2020",
     "Retailer": "City Water",
     "LineItem": "Water Bill",
@@ -1617,7 +1617,7 @@
   },
   {
     "TransactionNumber": 53,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/24/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -1625,7 +1625,7 @@
   },
   {
     "TransactionNumber": 53,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/24/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1641,7 +1641,7 @@
   },
   {
     "TransactionNumber": 53,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/24/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -1657,7 +1657,7 @@
   },
   {
     "TransactionNumber": 58,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/24/2020",
     "Retailer": "City Water",
     "LineItem": "Water Bill",
@@ -1665,7 +1665,7 @@
   },
   {
     "TransactionNumber": 58,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/24/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1673,7 +1673,7 @@
   },
   {
     "TransactionNumber": 66,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/24/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -1705,31 +1705,31 @@
   },
   {
     "TransactionNumber": 70,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/23/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 84.09
   },
   {
     "TransactionNumber": 13,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/23/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 87.93
   },
   {
     "TransactionNumber": 13,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/23/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 34.54
   },
   {
     "TransactionNumber": 13,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/23/2020",
     "Retailer": "Amazon",
     "LineItem": "Amazon Shopping",
@@ -1737,9 +1737,9 @@
   },
   {
     "TransactionNumber": 70,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/22/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 26.17
   },
@@ -1753,15 +1753,15 @@
   },
   {
     "TransactionNumber": 24,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/22/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 10.38
   },
   {
     "TransactionNumber": 33,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/22/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -1769,7 +1769,7 @@
   },
   {
     "TransactionNumber": 33,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/22/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -1793,7 +1793,7 @@
   },
   {
     "TransactionNumber": 33,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/22/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -1825,7 +1825,7 @@
   },
   {
     "TransactionNumber": 34,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/22/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -1833,7 +1833,7 @@
   },
   {
     "TransactionNumber": 34,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/22/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Drinks",
@@ -1841,7 +1841,7 @@
   },
   {
     "TransactionNumber": 34,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/22/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1865,23 +1865,23 @@
   },
   {
     "TransactionNumber": 26,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/21/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 37.17
   },
   {
     "TransactionNumber": 44,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/21/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 18.32
   },
   {
     "TransactionNumber": 44,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/21/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1905,7 +1905,7 @@
   },
   {
     "TransactionNumber": 44,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/21/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -1913,7 +1913,7 @@
   },
   {
     "TransactionNumber": 44,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/21/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -1929,7 +1929,7 @@
   },
   {
     "TransactionNumber": 7,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/20/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -1969,7 +1969,7 @@
   },
   {
     "TransactionNumber": 46,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/20/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -1993,7 +1993,7 @@
   },
   {
     "TransactionNumber": 46,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/20/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Pizza",
@@ -2001,7 +2001,7 @@
   },
   {
     "TransactionNumber": 46,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/20/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -2041,15 +2041,15 @@
   },
   {
     "TransactionNumber": 9,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/19/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 57.44
   },
   {
     "TransactionNumber": 9,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/19/2020",
     "Retailer": "Amazon",
     "LineItem": "Amazon Shopping",
@@ -2065,7 +2065,7 @@
   },
   {
     "TransactionNumber": 9,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/19/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -2081,7 +2081,7 @@
   },
   {
     "TransactionNumber": 23,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/19/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -2097,7 +2097,7 @@
   },
   {
     "TransactionNumber": 23,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/19/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -2153,7 +2153,7 @@
   },
   {
     "TransactionNumber": 37,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/19/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Drinks",
@@ -2217,7 +2217,7 @@
   },
   {
     "TransactionNumber": 40,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/19/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -2225,7 +2225,7 @@
   },
   {
     "TransactionNumber": 40,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/19/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Drinks",
@@ -2276,7 +2276,7 @@
     "Category": "Shopping",
     "Date": "10/17/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 92.63
   },
   {
@@ -2289,7 +2289,7 @@
   },
   {
     "TransactionNumber": 55,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/17/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -2313,7 +2313,7 @@
   },
   {
     "TransactionNumber": 55,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/15/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -2337,7 +2337,7 @@
   },
   {
     "TransactionNumber": 64,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/15/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -2353,7 +2353,7 @@
   },
   {
     "TransactionNumber": 64,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/15/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -2369,10 +2369,10 @@
   },
   {
     "TransactionNumber": 50,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/15/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 15.01
   },
   {
@@ -2387,13 +2387,13 @@
     "TransactionNumber": 50,
     "Category": "Home",
     "Date": "10/15/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 90.8
   },
   {
     "TransactionNumber": 50,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/15/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -2409,10 +2409,10 @@
   },
   {
     "TransactionNumber": 29,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/15/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 41.04
   },
   {
@@ -2425,9 +2425,9 @@
   },
   {
     "TransactionNumber": 29,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/15/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 40.99
   },
@@ -2449,7 +2449,7 @@
   },
   {
     "TransactionNumber": 29,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/15/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -2457,26 +2457,26 @@
   },
   {
     "TransactionNumber": 29,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/15/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 17.65
   },
   {
     "TransactionNumber": 29,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/15/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 98.44
   },
   {
     "TransactionNumber": 31,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/15/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 39.09
   },
   {
@@ -2497,7 +2497,7 @@
   },
   {
     "TransactionNumber": 31,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/14/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Training",
@@ -2505,7 +2505,7 @@
   },
   {
     "TransactionNumber": 48,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/14/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Gym Membership",
@@ -2513,7 +2513,7 @@
   },
   {
     "TransactionNumber": 48,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/14/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -2523,7 +2523,7 @@
     "TransactionNumber": 48,
     "Category": "Home",
     "Date": "10/14/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 72.24
   },
@@ -2537,7 +2537,7 @@
   },
   {
     "TransactionNumber": 48,
-    "Category": "Gifts &amp; Donations",
+    "Category": "Gifts & Donations",
     "Date": "10/14/2020",
     "Retailer": "SPCA",
     "LineItem": "Donation - Thank You!",
@@ -2569,7 +2569,7 @@
   },
   {
     "TransactionNumber": 52,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/14/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -2577,7 +2577,7 @@
   },
   {
     "TransactionNumber": 52,
-    "Category": "Health &amp; Wellness",
+    "Category": "Health & Wellness",
     "Date": "10/14/2020",
     "Retailer": "University Medical Center",
     "LineItem": "Medical Exam",
@@ -2596,7 +2596,7 @@
     "Category": "Shopping",
     "Date": "10/12/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 28.18
   },
   {
@@ -2612,7 +2612,7 @@
     "Category": "Shopping",
     "Date": "10/12/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 86.6
   },
   {
@@ -2620,7 +2620,7 @@
     "Category": "Shopping",
     "Date": "10/12/2020",
     "Retailer": "Pizza Perfect",
-    "LineItem": "Pizza &amp; Drinks",
+    "LineItem": "Pizza & Drinks",
     "Total": 31.46
   },
   {
@@ -2649,9 +2649,9 @@
   },
   {
     "TransactionNumber": 41,
-    "Category": "Bills &amp; Utilities",
+    "Category": "Bills & Utilities",
     "Date": "10/12/2020",
-    "Retailer": "G&amp;P Power",
+    "Retailer": "G&P Power",
     "LineItem": "Electric Bill",
     "Total": 92.89
   },
@@ -2673,7 +2673,7 @@
   },
   {
     "TransactionNumber": 41,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/12/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",
@@ -2681,7 +2681,7 @@
   },
   {
     "TransactionNumber": 41,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/12/2020",
     "Retailer": "Pizza Perfect",
     "LineItem": "Drinks",
@@ -2689,7 +2689,7 @@
   },
   {
     "TransactionNumber": 63,
-    "Category": "Food &amp; Drink",
+    "Category": "Food & Drink",
     "Date": "10/12/2020",
     "Retailer": "Sheetz",
     "LineItem": "Snacks",

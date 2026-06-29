@@ -501,12 +501,6 @@
 									</TableRows>
 								</Header>
 								<Details>
-									<Sorting>
-										<SortBy>
-											<Direction>Ascending</Direction>
-											<SortExpression>=Fields!date.Value</SortExpression>
-										</SortBy>
-									</Sorting>
 									<TableRows>
 										<TableRow>
 											<Height>0.397956in</Height>
@@ -782,15 +776,6 @@
 										</TableRow>
 									</TableRows>
 								</Details>
-								<Filters>
-									<Filter>
-										<FilterExpression>=Fields!employeeId.Value</FilterExpression>
-										<FilterValues>
-											<FilterValue>=Fields!id.Value</FilterValue>
-										</FilterValues>
-										<Operator>Equal</Operator>
-									</Filter>
-								</Filters>
 								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">13.462cm</dd:FixedHeight>
 								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">0cm</dd:FixedWidth>
 								<dd:RepeatToFill xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:RepeatToFill>

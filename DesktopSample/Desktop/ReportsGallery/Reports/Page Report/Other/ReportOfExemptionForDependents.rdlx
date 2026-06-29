@@ -7539,7 +7539,7 @@
 				<Sorting>
 					<SortBy>
 						<Direction>Ascending</Direction>
-						<SortExpression>=Fields.Item("['emp_id']").Value</SortExpression>
+						<SortExpression>=Fields!Id.Value</SortExpression>
 					</SortBy>
 				</Sorting>
 			</FixedPage>

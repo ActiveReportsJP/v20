@@ -1,0 +1,3536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2023/08/reportdefinition">
+	<Name>ApplyParametersAndJumpToBookmark</Name>
+	<ReportSections>
+		<ReportSection Name="Summary">
+			<Body>
+				<Height>7.177083in</Height>
+				<ReportItems>
+					<Chart version="1.2.3.0" Name="Chart1" xmlns="http://cdn.grapecity.com/ActiveReports/reporting/ReportItems/Chart">
+						<Left>1.375833cm</Left>
+						<Height>6.7188in</Height>
+						<Top>0.7408335cm</Top>
+						<Visibility>
+							<Hidden>False</Hidden>
+						</Visibility>
+						<Width>8.7812in</Width>
+						<DataElementName>Chart1</DataElementName>
+						<Style>
+							<Border>
+								<Color>Transparent</Color>
+							</Border>
+							<FontFamily>Segoe UI</FontFamily>
+						</Style>
+						<DataSetName>DataSet1</DataSetName>
+						<Palette>Custom</Palette>
+						<CustomPalette>
+							<Color>#3498DB</Color>
+							<Color>#18BC9C</Color>
+							<Color>#2C3E50</Color>
+							<Color>#E74C3C</Color>
+							<Color>#F39C12</Color>
+							<Color>#9B59B6</Color>
+							<Color>#34495E</Color>
+							<Color>#95A5A6</Color>
+						</CustomPalette>
+						<Header>
+							<Style>
+								<BackgroundColor>Transparent</BackgroundColor>
+								<PaddingBottom>10pt</PaddingBottom>
+								<PaddingTop>2pt</PaddingTop>
+								<FontFamily>メイリオ</FontFamily>
+								<FontSize>20pt</FontSize>
+							</Style>
+							<Title>売上高（年・製品ライン）</Title>
+						</Header>
+						<Footer>
+							<Style>
+								<PaddingBottom>2pt</PaddingBottom>
+								<PaddingLeft>2pt</PaddingLeft>
+								<PaddingRight>2pt</PaddingRight>
+								<PaddingTop>2pt</PaddingTop>
+								<FontSize>9pt</FontSize>
+							</Style>
+						</Footer>
+						<PlotArea>
+							<Style>
+								<PaddingBottom>2pt</PaddingBottom>
+								<PaddingLeft>2pt</PaddingLeft>
+								<PaddingRight>2pt</PaddingRight>
+								<PaddingTop>2pt</PaddingTop>
+								<FontSize>9pt</FontSize>
+							</Style>
+							<Axes>
+								<Axis>
+									<LabelStyle>
+										<FontFamily>メイリオ</FontFamily>
+										<FontSize>9pt</FontSize>
+										<Color>#555555</Color>
+									</LabelStyle>
+									<LineStyle>
+										<Border>
+											<Style>Solid</Style>
+											<Color>#CCCCCC</Color>
+										</Border>
+									</LineStyle>
+									<LogBase>10</LogBase>
+									<MajorTickSize>4pt</MajorTickSize>
+									<MinorTickSize>2pt</MinorTickSize>
+									<Plots>
+										<Plot>Chart1_Plot1</Plot>
+									</Plots>
+									<Title>年</Title>
+									<TitleStyle>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingLeft>2pt</PaddingLeft>
+										<PaddingRight>2pt</PaddingRight>
+										<PaddingTop>6pt</PaddingTop>
+										<FontFamily>メイリオ</FontFamily>
+										<FontSize>11pt</FontSize>
+										<Color>#333333</Color>
+									</TitleStyle>
+									<Type>X</Type>
+								</Axis>
+								<Axis>
+									<AxisLine>false</AxisLine>
+									<Format>c0</Format>
+									<LabelStyle>
+										<FontFamily>メイリオ</FontFamily>
+										<FontSize>9pt</FontSize>
+										<Format>C0</Format>
+										<Color>#555555</Color>
+									</LabelStyle>
+									<LogBase>10</LogBase>
+									<MajorGridStyle>
+										<Border>
+											<Style>Solid</Style>
+											<Color>Gainsboro</Color>
+										</Border>
+									</MajorGridStyle>
+									<MajorTickSize>0pt</MajorTickSize>
+									<MajorUnit>=""</MajorUnit>
+									<MinorTickSize>0pt</MinorTickSize>
+									<Plots>
+										<Plot>Chart1_Plot1</Plot>
+									</Plots>
+									<Title>売上高</Title>
+									<TitleStyle>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingLeft>2pt</PaddingLeft>
+										<PaddingRight>8pt</PaddingRight>
+										<PaddingTop>2pt</PaddingTop>
+										<FontFamily>メイリオ</FontFamily>
+										<FontSize>11pt</FontSize>
+										<Color>#333333</Color>
+									</TitleStyle>
+									<Type>Y</Type>
+								</Axis>
+							</Axes>
+						</PlotArea>
+						<Plots>
+							<Plot Name="Chart1_Plot1">
+								<DataCollectionName>Chart1_Plot1_Collection</DataCollectionName>
+								<DataElementName>Chart1_Plot1</DataElementName>
+								<Config>
+									<BarLineStyle>
+										<Style>None</Style>
+									</BarLineStyle>
+									<Bar>
+										<BottomWidth>0.65</BottomWidth>
+										<TopWidth>0.65</TopWidth>
+										<Width>0.65</Width>
+										<NeckHeight>1</NeckHeight>
+										<Overlap>0</Overlap>
+									</Bar>
+									<SeriesArrangement>Stack</SeriesArrangement>
+								</Config>
+								<SeriesGroupings>
+									<SeriesGrouping>
+										<Grouping Name="Product Line">
+											<GroupExpressions>
+												<GroupExpression>=Fields!ProductLine.Value</GroupExpression>
+											</GroupExpressions>
+											<Label>Product Line</Label>
+											<DataElementOutput>Output</DataElementOutput>
+										</Grouping>
+										<Sorting>
+											<SortBy>
+												<SortExpression>=Fields!ProductLine.Value</SortExpression>
+											</SortBy>
+										</Sorting>
+									</SeriesGrouping>
+								</SeriesGroupings>
+								<CategoryGroupings>
+									<CategoryGrouping>
+										<Grouping Name="Year">
+											<GroupExpressions>
+												<GroupExpression>=Fields!Year.Value</GroupExpression>
+											</GroupExpressions>
+											<Label>Year</Label>
+											<DataElementOutput>Output</DataElementOutput>
+										</Grouping>
+										<Sorting>
+											<SortBy>
+												<SortExpression>=Fields!Year.Value</SortExpression>
+											</SortBy>
+										</Sorting>
+									</CategoryGrouping>
+								</CategoryGroupings>
+								<DataSeries>
+									<SeriesItem>
+										<Name>Sales Amount</Name>
+										<Values>
+											<DataValue>
+												<Value>=Sum(Fields!SalesAmount.Value)</Value>
+												<Caption>Sales Amount</Caption>
+											</DataValue>
+										</Values>
+										<Label>
+											<Style>
+												<FontFamily>Segoe UI</FontFamily>
+												<FontSize>8pt</FontSize>
+												<Format>=""</Format>
+											</Style>
+										</Label>
+										<Marker />
+										<Style>
+											<BackgroundColor>=""</BackgroundColor>
+											<Border>
+												<Style>Solid</Style>
+												<Color>White</Color>
+											</Border>
+										</Style>
+										<Action>
+											<Drillthrough>
+												<Parameters />
+											</Drillthrough>
+											<ApplyParameters>
+												<Parameters>
+													<Parameter Name="CurrentYear">
+														<Value>=Fields!Year.Value</Value>
+													</Parameter>
+													<Parameter Name="CurrentCategory">
+														<Value>=Fields!ProductLine.Value</Value>
+													</Parameter>
+												</Parameters>
+												<TargetBookmark>SalesDetails</TargetBookmark>
+											</ApplyParameters>
+										</Action>
+										<DataElementOutput>Auto</DataElementOutput>
+									</SeriesItem>
+								</DataSeries>
+								<ColorSeries>
+									<Style>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingRight>10pt</PaddingRight>
+										<PaddingTop>4pt</PaddingTop>
+									</Style>
+									<TextStyle>
+										<FontFamily>メイリオ</FontFamily>
+										<FontSize>9pt</FontSize>
+									</TextStyle>
+									<TitleStyle>
+										<FontFamily>メイリオ</FontFamily>
+										<FontSize>9pt</FontSize>
+										<FontWeight>Bold</FontWeight>
+									</TitleStyle>
+									<Mode>SeriesGroups</Mode>
+								</ColorSeries>
+								<SizeSeries>
+									<Style>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingLeft>2pt</PaddingLeft>
+										<PaddingRight>2pt</PaddingRight>
+										<PaddingTop>2pt</PaddingTop>
+										<FontSize>8pt</FontSize>
+									</Style>
+									<TextStyle>
+										<FontSize>8pt</FontSize>
+									</TextStyle>
+									<TitleStyle>
+										<FontSize>8pt</FontSize>
+									</TitleStyle>
+									<IconColor>Black</IconColor>
+									<MaxHeight>1</MaxHeight>
+									<MaxWidth>1</MaxWidth>
+									<RangeOptions />
+								</SizeSeries>
+								<ShapeSeries>
+									<Style>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingLeft>2pt</PaddingLeft>
+										<PaddingRight>2pt</PaddingRight>
+										<PaddingTop>2pt</PaddingTop>
+										<FontSize>8pt</FontSize>
+									</Style>
+									<TextStyle>
+										<FontSize>8pt</FontSize>
+									</TextStyle>
+									<TitleStyle>
+										<FontSize>8pt</FontSize>
+									</TitleStyle>
+									<IconColor>Black</IconColor>
+									<MaxHeight>1</MaxHeight>
+									<MaxWidth>1</MaxWidth>
+								</ShapeSeries>
+							</Plot>
+						</Plots>
+					</Chart>
+				</ReportItems>
+			</Body>
+			<Page>
+				<PaperOrientation>Landscape</PaperOrientation>
+				<PageHeight>9.28in</PageHeight>
+				<PageWidth>12in</PageWidth>
+				<TopMargin>1in</TopMargin>
+				<BottomMargin>1in</BottomMargin>
+				<LeftMargin>1in</LeftMargin>
+				<RightMargin>1in</RightMargin>
+			</Page>
+			<Width>9.510417in</Width>
+			<DataElementName>ReportSection1</DataElementName>
+			<CustomProperties>
+				<CustomProperty>
+					<Name>PaperKind</Name>
+					<Value>Custom</Value>
+				</CustomProperty>
+			</CustomProperties>
+		</ReportSection>
+		<ReportSection Name="Details">
+			<Label>=""</Label>
+			<Body>
+				<Height>6in</Height>
+				<ReportItems>
+					<Tablix Name="Tablix1">
+						<TablixBody>
+							<TablixColumns>
+								<TablixColumn>
+									<Width>1.606104in</Width>
+								</TablixColumn>
+							</TablixColumns>
+							<TablixRows>
+								<TablixRow>
+									<Height>0.25in</Height>
+									<TablixCells>
+										<TablixCell>
+											<CellContents>
+												<Textbox Name="TextBox4">
+													<Style>
+														<BackgroundColor>Transparent</BackgroundColor>
+														<Color>Black</Color>
+														<FontFamily>メイリオ</FontFamily>
+														<FontSize>10pt</FontSize>
+														<FontStyle>Normal</FontStyle>
+														<FontWeight>400</FontWeight>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<Border>
+															<Style>Solid</Style>
+															<Color>#2c3e50</Color>
+														</Border>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Sum(Fields!SalesAmount.Value)*100</Value>
+												</Textbox>
+											</CellContents>
+										</TablixCell>
+									</TablixCells>
+								</TablixRow>
+								<TablixRow>
+									<Height>0.3in</Height>
+									<TablixCells>
+										<TablixCell>
+											<CellContents>
+												<Textbox Name="TextBox5">
+													<Style>
+														<BackgroundColor>WhiteSmoke</BackgroundColor>
+														<Color>Black</Color>
+														<FontFamily>メイリオ</FontFamily>
+														<FontSize>12pt</FontSize>
+														<FontStyle>Normal</FontStyle>
+														<FontWeight>400</FontWeight>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<VerticalAlign>Middle</VerticalAlign>
+														<Border>
+															<Style>Solid</Style>
+															<Color>#2c3e50</Color>
+														</Border>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Sum(Fields!SalesAmount.Value)*100</Value>
+												</Textbox>
+											</CellContents>
+										</TablixCell>
+									</TablixCells>
+								</TablixRow>
+							</TablixRows>
+						</TablixBody>
+						<TablixColumnHierarchy>
+							<TablixMembers>
+								<TablixMember />
+							</TablixMembers>
+						</TablixColumnHierarchy>
+						<TablixRowHierarchy>
+							<TablixMembers>
+								<TablixMember>
+									<Group Name="Tablix1_RowGroup_ProductLine_0">
+										<GroupExpressions>
+											<GroupExpression>=Fields!ProductLine.Value</GroupExpression>
+										</GroupExpressions>
+									</Group>
+									<TablixHeader>
+										<Size>2.872092in</Size>
+										<CellContents>
+											<Textbox Name="Tablix1_RowGroup_ProductLine_0">
+												<Style>
+													<BackgroundColor>Transparent</BackgroundColor>
+													<Color>Black</Color>
+													<FontFamily>メイリオ</FontFamily>
+													<FontSize>16pt</FontSize>
+													<FontStyle>Normal</FontStyle>
+													<FontWeight>400</FontWeight>
+													<Format>=""</Format>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>2pt</PaddingLeft>
+													<PaddingRight>2pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+													<TextAlign>Center</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+													<Border>
+														<Style>Solid</Style>
+														<Color>#2c3e50</Color>
+													</Border>
+												</Style>
+												<CanGrow>true</CanGrow>
+												<DataElementName>TextBox2</DataElementName>
+												<Value>=Fields!ProductLine.Value</Value>
+											</Textbox>
+										</CellContents>
+									</TablixHeader>
+									<TablixMembers>
+										<TablixMember>
+											<Group Name="Tablix1_RowGroup_Month_1">
+												<GroupExpressions>
+													<GroupExpression>=Fields!Month.Value</GroupExpression>
+												</GroupExpressions>
+											</Group>
+											<SortExpressions>
+												<SortExpression>
+													<Direction>Ascending</Direction>
+													<Value>=Fields!Month.Value</Value>
+												</SortExpression>
+											</SortExpressions>
+											<TablixHeader>
+												<Size>2.021805in</Size>
+												<CellContents>
+													<Textbox Name="Tablix1_RowGroup_Month_1">
+														<Style>
+															<BackgroundColor>Transparent</BackgroundColor>
+															<Color>#000000</Color>
+															<FontFamily>メイリオ</FontFamily>
+															<FontSize>10pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<Format>=""</Format>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<Border>
+																<Style>Solid</Style>
+																<Color>#2c3e50</Color>
+															</Border>
+														</Style>
+														<CanGrow>true</CanGrow>
+														<DataElementName>TextBox2</DataElementName>
+														<Value>=MonthName (Fields!Month.Value)</Value>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+										</TablixMember>
+									</TablixMembers>
+								</TablixMember>
+								<TablixMember>
+									<TablixHeader>
+										<Size>4.893897in</Size>
+										<CellContents>
+											<Textbox Name="TextBox2">
+												<Style>
+													<BackgroundColor>WhiteSmoke</BackgroundColor>
+													<Color>Black</Color>
+													<FontFamily>メイリオ</FontFamily>
+													<FontSize>12pt</FontSize>
+													<FontStyle>Normal</FontStyle>
+													<FontWeight>400</FontWeight>
+													<Format>c2</Format>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>2pt</PaddingLeft>
+													<PaddingRight>6pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+													<TextAlign>Right</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+													<Border>
+														<Style>Solid</Style>
+														<Color>#2c3e50</Color>
+													</Border>
+												</Style>
+												<CanGrow>true</CanGrow>
+												<DataElementName>TextBox6</DataElementName>
+												<Value>合計</Value>
+											</Textbox>
+										</CellContents>
+									</TablixHeader>
+								</TablixMember>
+							</TablixMembers>
+						</TablixRowHierarchy>
+						<RepeatColumnHeaders>true</RepeatColumnHeaders>
+						<RepeatRowHeaders>true</RepeatRowHeaders>
+						<Bookmark>SalesDetails</Bookmark>
+						<Top>0.255in</Top>
+						<Width>6.5in</Width>
+						<Height>0.55in</Height>
+						<Style>
+							<FontFamily>Arial</FontFamily>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<DataSetName>DataSet1</DataSetName>
+						<Filters>
+							<Filter>
+								<FilterExpression>=Fields!Year.Value</FilterExpression>
+								<FilterValues>
+									<FilterValue>=Parameters!CurrentYear.Value</FilterValue>
+								</FilterValues>
+								<Operator>Equal</Operator>
+							</Filter>
+							<Filter>
+								<FilterExpression>=Fields!ProductLine.Value</FilterExpression>
+								<FilterValues>
+									<FilterValue>=Parameters!CurrentCategory.Value</FilterValue>
+								</FilterValues>
+								<Operator>Equal</Operator>
+							</Filter>
+						</Filters>
+					</Tablix>
+					<Textbox Name="TextBox1">
+						<Width>6.5in</Width>
+						<Height>0.25in</Height>
+						<Style>
+							<BackgroundColor>WhiteSmoke</BackgroundColor>
+							<FontFamily>Segoe UI</FontFamily>
+							<FontSize>12pt</FontSize>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Center</TextAlign>
+							<Border>
+								<Style>Solid</Style>
+								<Color>#2c3e50</Color>
+							</Border>
+						</Style>
+						<ZIndex>2</ZIndex>
+						<CanGrow>true</CanGrow>
+						<Value>="月別の売上（" &amp; Parameters!CurrentYear.Value &amp; "年）"</Value>
+					</Textbox>
+				</ReportItems>
+			</Body>
+			<Page>
+				<PaperOrientation>Portrait</PaperOrientation>
+				<PageHeight>11in</PageHeight>
+				<PageWidth>8.5in</PageWidth>
+				<TopMargin>0.5in</TopMargin>
+				<BottomMargin>0.5in</BottomMargin>
+				<LeftMargin>1in</LeftMargin>
+				<RightMargin>1in</RightMargin>
+			</Page>
+			<Width>6.5in</Width>
+			<Visibility>
+				<Hidden>=IIF(IsNothing(Parameters!CurrentYear.Value) OR Parameters!CurrentYear.Value = "", True, False)</Hidden>
+			</Visibility>
+			<DataElementName>ReportSection2</DataElementName>
+			<CustomProperties>
+				<CustomProperty>
+					<Name>PaperKind</Name>
+					<Value>LetterSmall</Value>
+				</CustomProperty>
+			</CustomProperties>
+		</ReportSection>
+	</ReportSections>
+	<ReportParameters>
+		<ReportParameter Name="CurrentYear">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>SelectedYearParameter</Prompt>
+			<Hidden>true</Hidden>
+		</ReportParameter>
+		<ReportParameter Name="CurrentCategory">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Hidden>true</Hidden>
+		</ReportParameter>
+	</ReportParameters>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<ConnectString>jsondata=[
+  {
+    "SalesAmount": 2871,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2765.9,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3884.34,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3746.7,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5205.27,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3479.76,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2497.77,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5512.32,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2168.54,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4708.44,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3965.66,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2333.12,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3188.64,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3676.76,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4177.35,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4099.68,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2597.39,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4394.38,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4358.04,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4396.14,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 7737.93,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 1451,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 733.11,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3207.12,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2434.56,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 7516.08,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5404.62,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7209.11,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7329.06,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7374.1,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 10993.5,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4860.24,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8014.82,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5372.57,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7290.36,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 9064.89,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6075.3,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6463.23,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6120.34,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7680.64,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4905.39,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8014.82,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7136.19,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 10172.7,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 11623.7,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6000.4,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3003,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3944.7,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5691.84,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4514.92,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8254.8,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2416.56,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4140.23,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 12001,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3896.49,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2793.86,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3307.77,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5192.95,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5016.83,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3660.93,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4695.6,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3660.92,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3025.92,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3009.09,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5422.39,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2852.08,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5756.52,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4472,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2904.44,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6484.59,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3757.26,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4043.96,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5566.5,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3176,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2756.8,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 1329.9,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5288.01,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2225.5,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5833.8,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5887.35,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6065.55,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 9264.86,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 7023.98,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5176.38,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4132.7,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4183,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 8892.9,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 8714.7,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 8065.89,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6123.4,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 9774.03,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 7023.9,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 7078.23,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 8336.94,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6901.92,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5438.07,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6683.34,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4570.4,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 7667.14,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5868.2,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2990.13,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3664.1,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3834.38,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 1822.17,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 11886.6,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 9218.16,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 7208,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5004.8,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4398.24,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5597.76,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4526.08,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5924.16,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3492.48,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3854.24,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5324.4,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5197.92,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5997.6,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2910.4,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3378.24,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3508.8,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2992,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3427.2,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2692.8,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4128.96,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3051.71,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1201.25,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1962.22,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2624.64,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4046.25,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4846.7,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3370.56,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 9661.44,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2764.88,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5398.26,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4305.28,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3347.74,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3188.12,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3191.2,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3536.82,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5362.83,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3433.36,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4263.74,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4076.19,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7020.48,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6426.5,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4591.72,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4033.38,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4302.08,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7020.64,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3855.9,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6680.78,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6678,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2851.54,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3188.12,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4428,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5780.92,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2297.05,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6231.54,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1735.3,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4427.73,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5894.94,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5265.15,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7599.9,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8008.56,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 9245.76,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8296.35,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5019.9,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5411.07,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3840.9,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3930.4,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7498.9,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4517.91,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5774.72,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3922.56,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 9160.36,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 9631,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3432.24,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5521.89,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6934.62,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6876.11,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2930.27,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3584.25,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2817.87,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3420,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2575.04,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1961.28,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8690.36,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6034.38,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 11279.2,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8023.29,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4904,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8594.52,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7474.5,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3883.74,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8887.7,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8602.92,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7181.44,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8378.58,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 10606.2,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5818.4,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7071.27,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8411.56,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6570.76,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7975.44,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2688,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1888.26,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2513.28,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4764.48,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3560.64,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3823.64,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2280.96,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8677.8,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3394.98,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3415.44,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2439.57,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4829.8,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4100.1,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6563.06,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6817.22,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6163.94,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4933.92,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4056.36,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 5759.42,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3451,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 5920.4,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6668.24,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4094.72,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2938.5,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6387.8,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6396,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2669.1,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4784.13,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3273.93,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3586.43,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 5960.36,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 8470.14,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2952,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2464.8,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6232,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 7969.36,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3036.6,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 8284,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 2711.2,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 8339.8,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6238.84,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4639.25,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6747.6,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4512.48,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4029,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4771.8,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6087.94,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4193.28,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 7552.28,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6434.4,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5181.5,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 6863.92,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4157.04,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4660.24,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 4111.8,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3542.64,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 8118.55,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3877.06,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3867.08,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5951.44,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 8648.64,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 3447.78,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "オートバイ"
+  },
+  {
+    "SalesAmount": 5958.5,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5911.64,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7366.44,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4985.64,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5393.64,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4880.02,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8378.69,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4038.21,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3807.12,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3142.36,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4713.6,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7016.31,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4381.25,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4283.01,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4364.82,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4242.24,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4982.7,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6393.54,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1466.91,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4059.33,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4801.52,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2711.66,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5862,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4071.85,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8236.75,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6130.35,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3693.34,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6031.68,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3494.94,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5294.14,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5464.69,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2860.76,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5590,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2254.8,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4946.76,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2495.5,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3167.38,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2402.84,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2454.54,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5464.69,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4756.5,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3984.6,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3100.32,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4850.3,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3846.98,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4220.92,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3288.82,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3987.2,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1809.5,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1092.2,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4566.05,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5938.14,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8138.76,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 9470.94,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7036.89,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5559.03,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7872.5,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7886.2,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7232.16,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3114.4,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5045.22,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6952.12,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4157.73,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 7962.24,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3778.8,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 8253,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3633.4,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6913.8,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2583.6,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3105.62,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4408.56,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3042.41,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5941.5,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3241.9,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 6109.29,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3387.78,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3485.82,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2042.88,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1800.24,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1340.64,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1762.08,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2298.24,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1628,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1939.2,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3651.56,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2591.96,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2864.17,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1484.2,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2254.25,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2681.35,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3184.02,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2846.63,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1685.42,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3988.6,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2789.96,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3607.56,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3368.16,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2775.08,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1627.92,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2529.36,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3065.78,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4615.78,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 5723.78,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2559.6,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2140.11,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3327.6,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6825.6,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3543.28,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4516.22,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6445.46,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3384.36,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4891.68,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4521.96,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 5069.66,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6541.2,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3012.27,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 5247.18,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2214.87,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4773.18,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6185.7,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 1517.88,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 6372.6,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 5232.96,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2694.72,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2024,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 1749.79,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 2130.56,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 5951.34,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 4692.6,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2025,
+    "ProductLine": "トラック、バス"
+  },
+  {
+    "SalesAmount": 3731.04,
+    "Quarter": 1,
+    "Month": 3,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2142,
+    "Quarter": 2,
+    "Month": 5,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2838.81,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3230.37,
+    "Quarter": 3,
+    "Month": 9,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5182,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4391.1,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4477.32,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3544.56,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5195.85,
+    "Quarter": 4,
+    "Month": 12,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4180.44,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2684.43,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 1958.88,
+    "Quarter": 2,
+    "Month": 4,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4910.57,
+    "Quarter": 2,
+    "Month": 6,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4468.4,
+    "Quarter": 3,
+    "Month": 7,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 3127.88,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2675.13,
+    "Quarter": 3,
+    "Month": 8,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2807.61,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2023,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2504.75,
+    "Quarter": 4,
+    "Month": 10,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2984.88,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 2524.86,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4136,
+    "Quarter": 4,
+    "Month": 11,
+    "Year": 2024,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 4068.7,
+    "Quarter": 1,
+    "Month": 1,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  },
+  {
+    "SalesAmount": 5182,
+    "Quarter": 1,
+    "Month": 2,
+    "Year": 2025,
+    "ProductLine": "クラシックカー"
+  }
+]</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="SalesAmount">
+					<DataField>SalesAmount</DataField>
+				</Field>
+				<Field Name="Quarter">
+					<DataField>Quarter</DataField>
+				</Field>
+				<Field Name="Month">
+					<DataField>Month</DataField>
+				</Field>
+				<Field Name="Year">
+					<DataField>Year</DataField>
+				</Field>
+				<Field Name="ProductLine">
+					<DataField>ProductLine</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.[*]</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

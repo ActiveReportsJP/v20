@@ -6,10 +6,10 @@
     <RestoreEnablePackagePruning>false</RestoreEnablePackagePruning>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Designer.ja" Version="20.0.1" />
-    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Viewer.ja" Version="20.0.1" />
-    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Designer.ja" Version="20.0.1" />
-    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Viewer.ja" Version="20.0.1" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Designer.ja" Version="20.1.1" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Viewer.ja" Version="20.1.1" />
+    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Designer.ja" Version="20.1.1" />
+    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Viewer.ja" Version="20.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.0" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />

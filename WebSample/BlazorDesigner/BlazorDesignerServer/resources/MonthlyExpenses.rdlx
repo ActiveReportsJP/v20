@@ -77,8 +77,8 @@
 														</BottomBorder>
 													</Style>
 													<CanGrow>true</CanGrow>
-													<DataElementName>[' Line_ Item']</DataElementName>
-													<Value>=Fields.Item("['Line_Item']").Value</Value>
+													<DataElementName>LineItem</DataElementName>
+													<Value>=Fields!LineItem.Value</Value>
 												</Textbox>
 											</ReportItems>
 										</TableCell>

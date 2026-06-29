@@ -1325,6 +1325,7 @@
 			<ValidValues>
 				<DataSetReference>
 					<DataSetName>DataSet2</DataSetName>
+					<LabelField>CustomerName</LabelField>
 					<ValueField>CustomerName</ValueField>
 				</DataSetReference>
 			</ValidValues>

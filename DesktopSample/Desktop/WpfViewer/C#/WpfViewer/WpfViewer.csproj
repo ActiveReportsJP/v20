@@ -24,33 +24,36 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DS.Documents.Imaging" Version="8.1.4" />
+    <PackageReference Include="DS.Documents.Imaging" Version="9.0.4" />
     <PackageReference Include="MESCIUS.ActiveReports.Export.Rdf.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
     <PackageReference Include="MESCIUS.ActiveReports.Export.Excel.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
     <PackageReference Include="MESCIUS.ActiveReports.Export.Html.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
     <PackageReference Include="MESCIUS.ActiveReports.Export.Image.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
     <PackageReference Include="MESCIUS.ActiveReports.Export.Pdf.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
     <PackageReference Include="MESCIUS.ActiveReports.Export.Word.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
     <PackageReference Include="MESCIUS.ActiveReports.Export.Xml.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
     <PackageReference Include="MESCIUS.ActiveReports.Viewer.Wpf.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
-    <PackageReference Include="System.Data.SQLite.Core">
-      <Version>1.0.119</Version>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3">
+      <Version>3.0.2</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Encoding.CodePages">
       <Version>6.0.0</Version>

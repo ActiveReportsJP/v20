@@ -5,8 +5,8 @@
     <RestoreEnablePackagePruning>false</RestoreEnablePackagePruning>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Designer.ja" Version="20.0.1" />
-    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Viewer.ja" Version="20.0.1" />
+    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Designer.ja" Version="20.1.1" />
+    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Viewer.ja" Version="20.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="10.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.0" PrivateAssets="all" />
   </ItemGroup>

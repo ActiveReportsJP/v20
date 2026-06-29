@@ -18,7 +18,7 @@ function getReports() {
     return fetch(serverUrl + "reports")
         .then(response => response.json())
         .catch(error => {
-            console.error("Error fetching reports:", error);
+            console.error("レポートの取得中にエラーが発生しました：", error);
             return [];
         });
 }

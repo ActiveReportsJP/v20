@@ -11,8 +11,8 @@
     <NoWarn>NU1701</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Viewer.ja" Version="20.0.1" />
-    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Designer.ja" Version="20.0.1" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Viewer.ja" Version="20.1.1" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Designer.ja" Version="20.1.1" />
     <PackageReference Include="LiteDB" Version="5.0.21" />
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.56.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />

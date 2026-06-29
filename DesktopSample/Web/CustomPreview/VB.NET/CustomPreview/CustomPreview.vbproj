@@ -137,10 +137,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MESCIUS.ActiveReports.Export.Html.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
     <PackageReference Include="MESCIUS.ActiveReports.Export.Pdf.ja">
-      <Version>20.0.1</Version>
+      <Version>20.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
